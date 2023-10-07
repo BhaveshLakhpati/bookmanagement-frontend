@@ -1,0 +1,18 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="15px grid">
+        <div fxFlex="20%" fxFlex.xs="100%" class="card-fx" *ngFor="let book of availableBooks">
+            <mat-card>
+                <img mat-card-image src="{{book.imageURL}}" />
+                <mat-card-title>{{book.title}}</mat-card-title>
+                <mat-card-actions align="end">
+                    <button mat-icon-button color="primary" aria-label="Add to cart" (click)="addToCart(book.isbn)">
+                        <mat-icon>add_shopping_cart</mat-icon>
+                    </button>
+                    <button mat-icon-button color="warn" aria-label="Buy now">
+                        <mat-icon>flash_on</mat-icon>
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+        </div>
+    </div>
+</div>

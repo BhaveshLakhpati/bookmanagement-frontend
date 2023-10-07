@@ -1,0 +1,32 @@
+<mat-sidenav-container>
+  <mat-sidenav #drawer fixedInViewport>
+    <mat-nav-list>
+      <mat-list-item>
+        <a routerLink="/home" mat-list-item>Home</a>
+        <button mat-icon-button matListItemMeta>
+          <mat-icon>home</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="/cart" mat-list-item>Cart</a>
+        <button mat-icon-button matListItemMeta>
+          <mat-icon>add_shopping_cart</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-list-item>
+        <a routerLink="/orders" mat-list-item>Orders</a>
+        <button mat-icon-button matListItemMeta>
+          <mat-icon>payment</mat-icon>
+        </button>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>Books</span>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

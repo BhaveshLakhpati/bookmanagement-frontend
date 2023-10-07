@@ -1,0 +1,15 @@
+.content {
+    padding: 16px;
+}
+
+mat-card {
+    height: 400px;
+}
+
+.card-fx>mat-card>img {
+    height: 280px;
+}
+
+.card-fx > mat-card > mat-card-title {
+    height: 50px;
+}
